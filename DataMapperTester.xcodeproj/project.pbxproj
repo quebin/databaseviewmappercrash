@@ -16,6 +16,8 @@
 		0A9E992F2285676100081BD0 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E992E2285676100081BD0 /* DatabaseManager.swift */; };
 		0A9E993122856B3100081BD0 /* HolderGenerationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E993022856B3100081BD0 /* HolderGenerationOperation.swift */; };
 		0A9E993322856E2300081BD0 /* StoreHoldersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E993222856E2300081BD0 /* StoreHoldersOperation.swift */; };
+		0A9E99362285A69A00081BD0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E99352285A69A00081BD0 /* CollectionViewCell.swift */; };
+		0A9E99382285A86C00081BD0 /* CollectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E99372285A86C00081BD0 /* CollectionSectionHeaderView.swift */; };
 		9B5D25A55C72BA7233F57A5F /* Pods_DataMapperTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE6258A10177E750F9AEF4 /* Pods_DataMapperTester.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		0A9E992E2285676100081BD0 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		0A9E993022856B3100081BD0 /* HolderGenerationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolderGenerationOperation.swift; sourceTree = "<group>"; };
 		0A9E993222856E2300081BD0 /* StoreHoldersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHoldersOperation.swift; sourceTree = "<group>"; };
+		0A9E99352285A69A00081BD0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0A9E99372285A86C00081BD0 /* CollectionSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionHeaderView.swift; sourceTree = "<group>"; };
 		12AE6258A10177E750F9AEF4 /* Pods_DataMapperTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataMapperTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D3BCA3DC27F332EE542815 /* Pods-DataMapperTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMapperTester.debug.xcconfig"; path = "Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester.debug.xcconfig"; sourceTree = "<group>"; };
 		FC46ADD73CAB1991DFD0C19E /* Pods-DataMapperTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMapperTester.release.xcconfig"; path = "Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		0A9E99162285632A00081BD0 /* DataMapperTester */ = {
 			isa = PBXGroup;
 			children = (
+				0A9E99342285A67B00081BD0 /* Views */,
 				0A9E99292285648400081BD0 /* Data */,
 				0A9E99172285632A00081BD0 /* AppDelegate.swift */,
 				0A9E99192285632A00081BD0 /* ViewController.swift */,
@@ -89,6 +94,15 @@
 				0A9E993222856E2300081BD0 /* StoreHoldersOperation.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0A9E99342285A67B00081BD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E99352285A69A00081BD0 /* CollectionViewCell.swift */,
+				0A9E99372285A86C00081BD0 /* CollectionSectionHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2A1253497BB661625752707C /* Frameworks */ = {
@@ -233,11 +247,13 @@
 			files = (
 				0A9E991A2285632A00081BD0 /* ViewController.swift in Sources */,
 				0A9E99182285632A00081BD0 /* AppDelegate.swift in Sources */,
+				0A9E99362285A69A00081BD0 /* CollectionViewCell.swift in Sources */,
 				0A9E992F2285676100081BD0 /* DatabaseManager.swift in Sources */,
 				0A9E993122856B3100081BD0 /* HolderGenerationOperation.swift in Sources */,
 				0A9E992D228566CA00081BD0 /* DataSource.swift in Sources */,
 				0A9E993322856E2300081BD0 /* StoreHoldersOperation.swift in Sources */,
 				0A9E992B228564AC00081BD0 /* Holder.swift in Sources */,
+				0A9E99382285A86C00081BD0 /* CollectionSectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
