@@ -12,6 +12,7 @@
 		0A9E991D2285632A00081BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E991B2285632A00081BD0 /* Main.storyboard */; };
 		0A9E991F2285632C00081BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E991E2285632C00081BD0 /* Assets.xcassets */; };
 		0A9E99222285632C00081BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E99202285632C00081BD0 /* LaunchScreen.storyboard */; };
+		9B5D25A55C72BA7233F57A5F /* Pods_DataMapperTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AE6258A10177E750F9AEF4 /* Pods_DataMapperTester.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0A9E991E2285632C00081BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A9E99212285632C00081BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A9E99232285632C00081BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12AE6258A10177E750F9AEF4 /* Pods_DataMapperTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataMapperTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D3BCA3DC27F332EE542815 /* Pods-DataMapperTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMapperTester.debug.xcconfig"; path = "Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester.debug.xcconfig"; sourceTree = "<group>"; };
+		FC46ADD73CAB1991DFD0C19E /* Pods-DataMapperTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMapperTester.release.xcconfig"; path = "Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5D25A55C72BA7233F57A5F /* Pods_DataMapperTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0A9E99162285632A00081BD0 /* DataMapperTester */,
 				0A9E99152285632A00081BD0 /* Products */,
+				6A339EACF17ADB84D3F5A3DA /* Pods */,
+				2A1253497BB661625752707C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = DataMapperTester;
 			sourceTree = "<group>";
 		};
+		2A1253497BB661625752707C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12AE6258A10177E750F9AEF4 /* Pods_DataMapperTester.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A339EACF17ADB84D3F5A3DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93D3BCA3DC27F332EE542815 /* Pods-DataMapperTester.debug.xcconfig */,
+				FC46ADD73CAB1991DFD0C19E /* Pods-DataMapperTester.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A9E99262285632C00081BD0 /* Build configuration list for PBXNativeTarget "DataMapperTester" */;
 			buildPhases = (
+				F66EE1D9A53F0D1830CCC974 /* [CP] Check Pods Manifest.lock */,
 				0A9E99102285632A00081BD0 /* Sources */,
 				0A9E99112285632A00081BD0 /* Frameworks */,
 				0A9E99122285632A00081BD0 /* Resources */,
+				7CD266E7B45DAC6ECE6CB4CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CD266E7B45DAC6ECE6CB4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/FRZDatabaseViewMapper/FRZDatabaseViewMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRZDatabaseViewMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapDatabase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataMapperTester/Pods-DataMapperTester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F66EE1D9A53F0D1830CCC974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataMapperTester-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A9E99102285632A00081BD0 /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		0A9E99272285632C00081BD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D3BCA3DC27F332EE542815 /* Pods-DataMapperTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +377,7 @@
 		};
 		0A9E99282285632C00081BD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC46ADD73CAB1991DFD0C19E /* Pods-DataMapperTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
